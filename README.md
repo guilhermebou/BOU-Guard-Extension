@@ -1,6 +1,6 @@
-# BOU-Guard Extension
+# BOU-Guard | Extension
 
-BOU-Guard é uma extensão para o Google Chrome que realiza web scraping em páginas da web para identificar conteúdos preconceituosos e exibi-los em uma janela própria, facilitando a visualização e análise do usuário.
+BOU-Guard | Extension (Behavior Observation Unit - Guard | Extension), é uma extensão para o Google Chrome que realiza web scraping em páginas da web para identificar conteúdos preconceituosos utilizando a tecnologia GPT e exibi-los em uma janela própria, facilitando a visualização e análise do usuário.
 
 ## 📌 Funcionalidades
 - Identificação de conteúdos preconceituosos em páginas da web.
@@ -18,7 +18,7 @@ BOU-Guard é uma extensão para o Google Chrome que realiza web scraping em pág
 
 ## 📂 Estrutura do Projeto
 ```
-BOU-Guard-Extension-main/
+BOU-Guard-Extension
 │── config/
 │   └── manifest.json  # Configuração da extensão Chrome
 │── docs/
@@ -38,12 +38,12 @@ BOU-Guard-Extension-main/
 
 ## 📜 Funções dos Arquivos
 - **`manifest.json`**: Define permissões e configurações da extensão no Chrome.
-- **`background.js`**: Gerencia eventos da extensão em segundo plano.
-- **`contentScript.js`**: Coleta os conteúdos das páginas e identifica termos ofensivos.
+- **`background.js`**: Gerencia eventos em segundo plano, intercepta requisições e envia mensagens para os scripts de conteúdo.
+- **`contentScript.js`**: Atua dentro das páginas da web, identificando e destacando expressões detectadas pela extensão.
 - **`script.js`**: Suporte para manipulação da interface da extensão.
-- **`main.py`**: Backend responsável pelo processamento de dados e análise dos conteúdos.
+- **`main.py`**: Backend responsável pelo Web scraping (raspagem de dados), processamento de dados e análise dos conteúdos.
 - **`cache.json`**: Armazena temporariamente os dados coletados.
-- **`index.html`**: Interface gráfica da extensão.
+- **`index.html`**: Interface gráfica da extensão (estilização com Tailwind CSS).
 
 ## 🔧 Instalação
 ### 1. Pré-requisitos
@@ -56,7 +56,7 @@ Antes de instalar a extensão, certifique-se de ter os seguintes requisitos:
 1. Baixe ou clone este repositório.
 2. No Chrome, acesse `chrome://extensions/`.
 3. Ative o `Modo do Desenvolvedor`.
-4. Clique em `Carregar sem compactação` e selecione a pasta `BOU-Guard-Extension-main`.
+4. Clique em `Carregar sem compactação` e selecione a pasta `BOU-Guard-Extension`.
 5. A extensão será adicionada ao Chrome e poderá ser utilizada.
 
 ### 3. Instalação das Dependências
