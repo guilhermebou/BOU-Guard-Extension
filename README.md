@@ -22,7 +22,7 @@ BOU-Guard-Extension
 │── config/
 │   └── manifest.json  # Configuração da extensão Chrome
 │── docs/
-│   └── midia/executionextension.mp4  # Demonstração da extensão
+│   └── midia/executionextension.git  # Demonstração da extensão
 │── src/
 │   ├── backend/
 │   │   └── main.py  # Código backend para processamento
