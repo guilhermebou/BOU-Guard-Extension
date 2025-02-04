@@ -20,20 +20,21 @@ BOU-Guard | Extension (Behavior Observation Unit - Guard | Extension), é uma ex
 ```
 BOU-Guard-Extension
 │── config/
-│   └── manifest.json  # Configuração da extensão Chrome
+│   └── manifest.json
 │── docs/
-│   └── midia/executionextension.git  # Demonstração da extensão
+│   └── midia/
+│   │   └── executionextension.git
 │── src/
 │   ├── backend/
-│   │   └── main.py  # Código backend para processamento
+│   │   └── main.py
 │   ├── data/
-│   │   └── cache.json  # Armazenamento de dados
+│   │   └── cache.json
 │   ├── frontend/
-│   │   └── index.html  # Interface da extensão
+│   │   └── index.html
 │   ├── scripts/
-│   │   ├── background.js  # Script de background
-│   │   ├── contentScript.js  # Web scraping e coleta de dados
-│   │   └── script.js  # Código auxiliar
+│   │   ├── background.js
+│   │   ├── contentScript.js
+│   │   └── script.js 
 ```
 
 ## 📜 Funções dos Arquivos
