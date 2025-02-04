@@ -8,7 +8,7 @@ BOU-Guard é uma extensão para o Google Chrome que realiza web scraping em pág
 - Armazenamento temporário dos dados coletados para análise posterior.
 
 ## 📺 Demonstração
-![Demonstração da Extensão](docs/midia/executionextension.mp4)
+![Demonstração da Extensão](docs/midia/executionextension.gif)
 
 ## 🛠️ Tecnologias Utilizadas
 - **JavaScript** (background scripts, content scripts)
