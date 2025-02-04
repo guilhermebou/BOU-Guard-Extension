@@ -64,8 +64,20 @@ Antes de instalar a extensão, certifique-se de ter os seguintes requisitos:
 #### Python
 Dentro da pasta `backend`, instale as dependências executando:
 ```sh
-pip install -r requirements.txt
+pip install nltk
+pip install requests
+pip install beautifulsoup4
+pip install flask
+pip install flask-cors
+pip install os
 ```
+Para instalação dos pacotes NLTK
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+
 Principais bibliotecas usadas:
 - **Flask**: Para criar a API backend.
 - **BeautifulSoup**: Para extração de dados HTML.
